@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educational Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="close-btn" id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="profile">
+          <div class="profile-img">
+            <img src="Assets/profile.jpg" alt="Profile" id="profile-image" />
+          </div>
+          <div class="profile-info">
+            <p>Hey Mokshita!</p>
+            <p>Welcome</p>
+          </div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active"><i class="fas fa-chart-pie"></i> Dashboard</li>
+          <li><i class="fas fa-graduation-cap"></i> Programs</li>
+          <li><i class="fas fa-user-tie"></i> Mentors</li>
+          <li><i class="fas fa-building"></i> Companies</li>
+          <li><i class="fas fa-video"></i> Webinars</li>
+          <li><i class="fas fa-bell"></i> Notification</li>
+          <li><i class="fas fa-cog"></i> App Settings</li>
+          <li><i class="fas fa-headset"></i> Contact Support</li>
+          <li><i class="fas fa-sync"></i> Updates</li>
+        </ul>
+      </nav>
+      <div class="sign-out">
+        <i class="fas fa-sign-out-alt"></i> Sign Out
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Page 1: Recommended Programs -->
+      <section class="page" id="page1">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <button class="program-btn">CHOOSE A PROGRAM</button>
+        </div>
+
+        <div class="section-title">
+          <h2>RECOMMENDED PROGRAMS</h2>
+        </div>
+
+        <div class="program-cards">
+          <!-- Development Program Card -->
+          <div class="program-card">
+            <div class="program-img">
+              <img src="Assets/webdevelopment.avif" alt="Development" />
+            </div>
+            <div class="program-category">DEVELOPMENT</div>
+            <div class="program-details">
+              <div class="detail"><i class="far fa-clock"></i> 4 months Course</div>
+              <div class="detail"><i class="fas fa-dollar-sign"></i> Get placed with Rs.3.0 LPA Salary</div>
+              <div class="detail"><i class="fas fa-briefcase"></i> 10K Lac+ opportunities</div>
+              <div class="detail"><i class="fas fa-calendar"></i> Application Deadline</div>
+              <div class="detail date">23 Feb 2026</div>
+            </div>
+            <button class="apply-btn">APPLY NOW</button>
+          </div>
+
+          <!-- Analyst Program Card -->
+          <div class="program-card">
+            <div class="program-img">
+              <img src="Assets/analysts.avif" alt="Analyst" />
+            </div>
+            <div class="program-category">ANALYST</div>
+            <div class="program-details">
+              <div class="detail"><i class="far fa-clock"></i> 4 months Course</div>
+              <div class="detail"><i class="fas fa-dollar-sign"></i> Get placed with Rs.3.0 LPA Salary</div>
+              <div class="detail"><i class="fas fa-briefcase"></i> 10K Lac+ opportunities</div>
+              <div class="detail"><i class="fas fa-calendar"></i> Application Deadline</div>
+              <div class="detail date">23 Feb 2026</div>
+            </div>
+            <button class="apply-btn">APPLY NOW</button>
+          </div>
+
+          <!-- Testing Program Card -->
+          <div class="program-card">
+            <div class="program-img">
+              <img src="Assets/testing.png" alt="Testing" />
+            </div>
+            <div class="program-category">TESTING</div>
+            <div class="program-details">
+              <div class="detail"><i class="far fa-clock"></i> 4 months Course</div>
+              <div class="detail"><i class="fas fa-dollar-sign"></i> Get placed with Rs.3.0 LPA Salary</div>
+              <div class="detail"><i class="fas fa-briefcase"></i> 10K Lac+ opportunities</div>
+              <div class="detail"><i class="fas fa-calendar"></i> Application Deadline</div>
+              <div class="detail date">23 Feb 2026</div>
+            </div>
+            <button class="apply-btn">APPLY NOW</button>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <!-- Page 2: Dashboard -->
+      <section class="page" id="page2">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <button class="program-btn">CHOOSE A PROGRAM</button>
+        </div>
+
+        <div class="dashboard-container">
+          <div class="dashboard-left">
+            <div class="section-title">
+              <h3>UPCOMING ONLINE PROGRAM</h3>
+            </div>
+
+            <div class="program-cards small">
+              <!-- Web Development Card -->
+              <div class="program-card small">
+                <div class="program-img">
+                  <img src="Assets/webdevelopment.avif" alt="Web Development" />
+                </div>
+                <div class="program-category">WEB DEVELOPMENT</div>
+                <div class="program-details small">
+                  <div class="detail"><i class="far fa-clock"></i> 3 year Course</div>
+                  <div class="detail"><i class="fas fa-chalkboard"></i> Mentorship</div>
+                  <div class="detail"><i class="fas fa-certificate"></i> Certificate</div>
+                  <div class="detail date">23 Feb 2026</div>
+                </div>
+                <button class="apply-btn small">APPLY NOW</button>
+              </div>
+
+              <!-- UI/UX Design Card -->
+              <div class="program-card small">
+                <div class="program-img">
+                  <img src="Assets/uiux.webp" alt="UI/UX Design" />
+                </div>
+                <div class="program-category">UI/UX DESIGN</div>
+                <div class="program-details small">
+                  <div class="detail"><i class="far fa-clock"></i> 3 year Course</div>
+                  <div class="detail"><i class="fas fa-chalkboard"></i> Mentorship</div>
+                  <div class="detail"><i class="fas fa-certificate"></i> Certificate</div>
+                  <div class="detail date">23 Feb 2026</div>
+                </div>
+                <button class="apply-btn small">APPLY NOW</button>
+              </div>
+
+              <!-- SEO Card -->
+              <div class="program-card small">
+                <div class="program-img">
+                  <img src="Assets/seo.jpg" alt="SEO" />
+                </div>
+                <div class="program-category">SEO</div>
+                <div class="program-details small">
+                  <div class="detail"><i class="far fa-clock"></i> 3 year Course</div>
+                  <div class="detail"><i class="fas fa-chalkboard"></i> Mentorship</div>
+                  <div class="detail"><i class="fas fa-certificate"></i> Certificate</div>
+                  <div class="detail date">23 Feb 2026</div>
+                </div>
+                <button class="apply-btn small">APPLY NOW</button>
+              </div>
+            </div>
+
+            <div class="section-title">
+              <h3>CURRENT PROGRAMS</h3>
+            </div>
+
+            <div class="program-cards mini">
+              <!-- Current Web Development -->
+              <div class="program-card mini">
+                <div class="program-img">
+                  <img src="Assets/webdevelopment.avif" alt="Web Development" />
+                </div>
+                <div class="program-category">WEB DEVELOPMENT</div>
+                <div class="program-actions">
+                  <span class="dots">•••</span>
+                </div>
+              </div>
+
+              <!-- Current UI/UX Design -->
+              <div class="program-card mini">
+                <div class="program-img">
+                  <img src="Assets/uiux.webp" alt="UI/UX Design" />
+                </div>
+                <div class="program-category">UI/UX DESIGN</div>
+                <div class="program-actions">
+                  <span class="dots">•••</span>
+                </div>
+              </div>
+
+              <!-- Current SEO -->
+              <div class="program-card mini">
+                <div class="program-img">
+                  <img src="Assets/seo.jpg" alt="SEO" />
+                </div>
+                <div class="program-category">SEO</div>
+                <div class="program-actions">
+                  <span class="dots">•••</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-title">
+              <h3>COMPLETED PROGRAMS</h3>
+            </div>
+
+            <div class="program-cards mini">
+              <!-- Completed Web Development -->
+              <div class="program-card mini">
+                <div class="program-img">
+                  <img src="Assets/webdevelopment.avif" alt="Web Development" />
+                </div>
+                <div class="program-category">WEB DEVELOPMENT</div>
+                <div class="program-actions">
+                  <span class="review">Review</span>
+                </div>
+              </div>
+
+              <!-- Completed UI/UX Design -->
+              <div class="program-card mini">
+                <div class="program-img">
+                  <img src="Assets/uiux.webp" alt="UI/UX Design" />
+                </div>
+                <div class="program-category">UI/UX DESIGN</div>
+                <div class="program-actions">
+                  <span class="review">Review</span>
+                </div>
+              </div>
+
+              <!-- Completed SEO -->
+              <div class="program-card mini">
+                <div class="program-img">
+                  <img src="Assets/seo.jpg" alt="SEO" />
+                </div>
+                <div class="program-category">SEO</div>
+                <div class="program-actions">
+                  <span class="review">Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-right">
+            <div class="data-analysis">
+              <h3>ANALYSING YOUR DATA</h3>
+              <div class="progress-circle">
+                <svg width="150" height="150" viewBox="0 0 150 150">
+                  <circle cx="75" cy="75" r="60" fill="none" stroke="#e6e6e6" stroke-width="15" />
+                  <circle cx="75" cy="75" r="60" fill="none" stroke="#FFC107" stroke-width="15" stroke-dasharray="377" stroke-dashoffset="188.5" />
+                </svg>
+                <div class="progress-text">50%</div>
+              </div>
+              <p class="progress-message">You have completed 50%<br>Keep Skilling,Keep Growing!</p>
+            </div>
+
+            <div class="info-box">
+              <h3>TRENDING SKILLS</h3>
+            </div>
+
+            <div class="info-box">
+              <h3>LATEST DEVELOPMENT</h3>
+            </div>
+
+            <div class="info-box">
+              <h3>JOB MARKET</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 3: Program Selection -->
+      <section class="page" id="page3">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <button class="program-btn">CHOOSE A PROGRAM</button>
+        </div>
+
+        <div class="search-container">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+
+        <div class="program-selection">
+          <div class="program-option">
+            <div class="program-icon">
+              <img src="Assets/insurancedash.png" alt="Insurance" />
+            </div>
+            <button class="program-select-btn">INSURANCE</button>
+          </div>
+
+          <div class="program-option">
+            <div class="program-icon">
+              <img src="Assets/shadowingdash.png" alt="Shadowing" />
+            </div>
+            <button class="program-select-btn">SHADOWING</button>
+          </div>
+
+          <div class="program-option">
+            <div class="program-icon">
+              <img src="Assets/LITdash.png" alt="LTI with Mentor" />
+            </div>
+            <button class="program-select-btn">LTI WITH MENTOR</button>
+          </div>
+
+          <div class="program-option">
+            <div class="program-icon">
+              <img src="Assets/PaidLTI.png" alt="Paid LTI" />
+            </div>
+            <button class="program-select-btn">PAID LTI</button>
+          </div>
+        </div>
+
+        <div class="dashboard-right mobile">
+          <div class="data-analysis">
+            <h3>ANALYSING YOUR DATA</h3>
+            <div class="progress-circle">
+              <svg width="150" height="150" viewBox="0 0 150 150">
+                <circle cx="75" cy="75" r="60" fill="none" stroke="#e6e6e6" stroke-width="15" />
+                <circle cx="75" cy="75" r="60" fill="none" stroke="#FFC107" stroke-width="15" stroke-dasharray="377" stroke-dashoffset="188.5" />
+              </svg>
+              <div class="progress-text">50%</div>
+            </div>
+            <p class="progress-message">You have completed 50%<br>Keep Skilling,Keep Growing!</p>
+          </div>
+
+          <div class="info-box">
+            <h3>TRENDING SKILLS</h3>
+          </div>
+
+          <div class="info-box">
+            <h3>LATEST DEVELOPMENT</h3>
+          </div>
+
+          <div class="info-box">
+            <h3>JOB MARKET</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 4: Profile Page -->
+      <section class="page" id="profile-page">
+        <div class="header-banner">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Banner" class="banner-img" />
+          <h2 class="page-title">My Profile</h2>
+        </div>
+
+        <div class="profile-container">
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <img src="https://via.placeholder.com/150/FFC107/000000?text=M" alt="Profile" />
+              <button class="change-avatar-btn"><i class="fas fa-camera"></i></button>
+            </div>
+            <div class="profile-name">
+              <h2>Mokshita Sharma</h2>
+              <p>Web Development Student</p>
+            </div>
+          </div>
+
+          <div class="profile-details">
+            <div class="profile-section">
+              <h3>Personal Information</h3>
+              <div class="profile-info-grid">
+                <div class="profile-info-item">
+                  <label>Full Name</label>
+                  <p>Mokshita Sharma</p>
+                </div>
+                <div class="profile-info-item">
+                  <label>Email</label>
+                  <p>mokshita.sharma@example.com</p>
+                </div>
+                <div class="profile-info-item">
+                  <label>Phone</label>
+                  <p>+91 98765 43210</p>
+                </div>
+                <div class="profile-info-item">
+                  <label>Location</label>
+                  <p>Mumbai, India</p>
+                </div>
+              </div>
+              <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+
+            <div class="profile-section">
+              <h3>Education</h3>
+              <div class="education-item">
+                <h4>Bachelor of Technology in Computer Science</h4>
+                <p>Mumbai University - 2020 to 2024</p>
+              </div>
+              <div class="education-item">
+                <h4>Higher Secondary Education</h4>
+                <p>Delhi Public School - 2018 to 2020</p>
+              </div>
+            </div>
+
+            <div class="profile-section">
+              <h3>Skills</h3>
+              <div class="skills-container">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- 
+      <section class="mentor-cards">
+        <div class="card" data-category="Entrepreneur">
+            <img class="image-placeholder" src="Assets/entrepreneur.jpg" alt="Mentor Image" />
+            <p class="mentor-name">Major Davinder Nath Sood</p>
+            <p class="specification">Owner- Regency One (Luxury Retail Space, New Delhi)</p>
+        </div>
+        <div class="card" data-category="Cognitive Expert">
+            <img class="image-placeholder" src="Assets/pragya.webp" />
+            <p class="mentor-name">Pragya</p>
+            <p class="specification">Expert in Cognitive Development</p>
+        </div>
+        <div class="card" data-category="Digital Experts">
+            <img class="image-placeholder" src="Assets/tripti..png" alt="Mentor Image"
+            />
+            <p class="mentor-name">Tripti</p>
+            <p class="specification">14 years of experience in Digital Marketing and Training</p>
+        </div>
+        <div class="card" data-category="SEO Expert">
+            <img class="image-placeholder" src="Assets/seoexpert.jpg" alt="Mentor Image"
+            />
+            <p class="mentor-name">Rashmi Sharma</p>
+            <p class="specification">20 years of experience in Digital Marketing</p>
+        </div>
+        <div class="card" data-category="Tech Experts">
+            <img class="image-placeholder" src="Assets/salman.png" alt="Mentor Image"
+            />
+            <p class="mentor-name">Md. Salman</p>
+            <p class="specification">5 years of experience in Web Development</p>
+        </div>
+    </section> -->
+
+    
+      <!-- Page 5: Mentors Page -->
+      <section class="page" id="mentors-page">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <h2 class="page-title">Our Mentors</h2>
+        </div>
+
+        <div class="search-container">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search mentors" />
+          </div>
+        </div>
+
+        <div class="mentors-container">
+          <!-- Mentor 1 -->
+          <div class="mentor-card">
+            <div class="mentor-img">
+              <img src="Assets/entrepreneur.jpg" alt="Mentor" />
+            </div>
+            <div class="mentor-info">
+              <h3 class="mentor-name">Major Davinder Nath Sood</h3>
+              <p class="specification">Owner- Regency One (Luxury Retail Space, New Delhi)</p>
+              <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+
+          <!-- Mentor 2 -->
+          <div class="mentor-card">
+            <div class="mentor-img">
+              <img src="Assets/pragya.webp" alt="Mentor" />
+            </div>
+            <div class="mentor-info">
+              <h3 class="mentor-name">Pragya</h3>
+              <p class="specification">Expert in Cognitive Development</p>
+                <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+
+          <!-- Mentor 3 -->
+          <div class="mentor-card">
+            <div class="mentor-img">
+              <img src="Assets/tripti..png" alt="Mentor" />
+            </div>
+            <div class="mentor-info">
+              <h3 class="mentor-name">Tripti</h3>
+              <p class="specification">14 years of experience in Digital Marketing and Training</p>
+                <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+
+          <!-- Mentor 4 -->
+          <div class="mentor-card">
+            <div class="mentor-img">
+              <img src="Assets/seoexpert.jpg" alt="Mentor" />
+            </div>
+            <div class="mentor-info">
+              <h3 class="mentor-name">Rashmi Sharma</h3>
+              <p class="specification">20 years of experience in Digital Marketing</p>  
+                <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+
+          <!-- Mentor 5 -->
+          <div class="mentor-card">
+            <div class="mentor-img">
+              <img src="Assets/salman.png" alt="Mentor" />
+            </div>
+            <div class="mentor-info">
+              <h3 class="mentor-name">Md. Salman</h3>
+              <p class="specification">5 years of experience in Web Development</p>
+                <button class="connect-btn">Connect</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 6: Companies Page -->
+      <section class="page" id="companies-page">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <h2 class="page-title">Partner Companies</h2>
+        </div>
+
+        <div class="search-container">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search companies" />
+          </div>
+        </div>
+
+        <div class="companies-container">
+          <!-- Company 1 -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="https://manmadigital.com/Elements/manma_logo.webp" alt="Manma Digital Logo">
+            </div>
+            <div class="company-info">
+              <h3>Manma Digital</h3>
+              <p class="company-type">Digital Marketing & Branding</p>
+              <p class="company-location"><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+              <p class="company-desc">Providing innovative digital marketing solutions to help businesses grow their online presence.</p>
+              <a href="https://manmadigital.com" target="_blank" class="view-company-btn">Visit Website</a>
+            </div>
+          </div>
+
+          <!-- Company 2 -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="https://assets.travclan.com/unsafe/0x100/smart/https://s3.ap-south-1.amazonaws.com/com.travclan.b2b2c/logo/4268/1723206538.590756/0.8067609391250219/Untitled_design_19.png" alt="TravClan Logo">            </div>
+            <div class="company-info">
+              <h3>TravClan</h3>
+              <p class="company-type">Travel & Tourism</p>
+              <p class="company-location"><i class="fas fa-map-marker-alt"></i> Gurgaon, India</p>
+              <p class="company-desc">Empowering travel agents with seamless booking and travel solutions.</p>
+              <a href="https://travclan.com" target="_blank" class="view-company-btn">Visit Website</a>
+            </div>
+          </div>
+
+          <!-- Company 3 -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="https://www.thewedcafe.com/wp-content/uploads/2017/07/Logo-Red.svg" alt="The Wed Cafe Logo">
+            </div>
+            <div class="company-info">
+              <h3>The Wed Cafe</h3>
+              <p class="company-type">Event Planning</p>
+              <p class="company-location"><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+              <p class="company-desc">Creating memorable and beautiful wedding experiences with personalized planning.</p>
+              <a href="https://www.thewedcafe.com" target="_blank" class="view-company-btn">Visit Website</a>
+            </div>
+          </div>
+
+          <!-- Company 4 -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="https://www.iid.org.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fiid-logo.c76f2eba.png&w=1920&q=75" alt="IID Logo">
+            </div>
+            <div class="company-info">
+              <h3>Institute for Industrial Development (IID)</h3>
+              <p class="company-type">Education & Training</p>
+              <p class="company-location"><i class="fas fa-map-marker-alt"></i> Lucknow, India</p>
+              <p class="company-desc">Providing entrepreneurship training and skill development for aspiring business owners.</p>
+              <a href="https://www.iid.org.in" target="_blank" class="view-company-btn">Visit Website</a>
+            </div>
+          </div>
+
+          <!-- Company 5 -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="https://thebrisk.co/wp-content/uploads/2024/08/The-Bricks-Logo.webp" alt="The Brisk Logo">
+            </div>
+            <div class="company-info">
+              <h3>The Brisk</h3>
+              <p class="company-type">Consulting & Strategy</p>
+              <p class="company-location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+              <p class="company-desc">Delivering strategic business consulting and innovative solutions for growth.</p>
+              <a href="https://thebrisk.co" target="_blank" class="view-company-btn">Visit Website</a>
+            </div>
+          </div>
+
+          <!-- Company 6 -->
+          <div class="company-card">
+            <div class="company-logo">
+              <img src="Assets/onepatnerlogo.png" alt="One Partner Logo">
+            </div>
+            <div class="company-info">
+              <h3>One Partner</h3>
+              <p class="company-type">Business Solutions</p>
+              <p class="company-location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+              <p class="company-desc">Providing end-to-end business support and partnership solutions.</p>
+              <a href="#" target="_blank" class="view-company-btn">Visit Website</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Page 7: Webinars Page -->
+      <section class="page" id="webinars-page">
+        <div class="header-banner">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Banner" class="banner-img" />
+          <h2 class="page-title">Upcoming Webinars</h2>
+        </div>
+
+        <div class="search-container">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search webinars" />
+          </div>
+          <div class="filter-options">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Upcoming</button>
+            <button class="filter-btn">Recorded</button>
+          </div>
+        </div>
+
+        <div class="webinars-container">
+          <!-- Webinar 1 -->
+          <div class="webinar-card">
+            <div class="webinar-img">
+              <img src="Assets/futureweb.avif" alt="Webinar" />
+              <div class="webinar-date">
+                <span class="date">25</span>
+                <span class="month">JUN</span>
+              </div>
+            </div>
+            <div class="webinar-info">
+              <h3>Future of Web Development</h3>
+              <p class="webinar-time"><i class="far fa-clock"></i> 3:00 PM - 4:30 PM IST</p>
+              <p class="webinar-speaker"><i class="fas fa-user"></i> Rajesh Kumar, Senior Developer</p>
+              <p class="webinar-desc">Learn about the latest trends and technologies shaping the future of web development.</p>
+              <button class="register-btn">Register Now</button>
+            </div>
+          </div>
+
+          <!-- Webinar 2 -->
+          <div class="webinar-card">
+            <div class="webinar-img">
+              <img src="Assets/datascience.avif" alt="Webinar" />
+              <div class="webinar-date">
+                <span class="date">28</span>
+                <span class="month">JUN</span>
+              </div>
+            </div>
+            <div class="webinar-info">
+              <h3>Data Science for Beginners</h3>
+              <p class="webinar-time"><i class="far fa-clock"></i> 5:00 PM - 6:30 PM IST</p>
+              <p class="webinar-speaker"><i class="fas fa-user"></i> Priya Sharma, Data Scientist</p>
+              <p class="webinar-desc">Introduction to data science concepts and tools for beginners.</p>
+              <button class="register-btn">Register Now</button>
+            </div>
+          </div>
+
+          <!-- Webinar 3 -->
+          <div class="webinar-card">
+            <div class="webinar-img">
+              <img src="Assets/uiuxdesign.webp" alt="Webinar" />
+              <div class="webinar-date">
+                <span class="date">02</span>
+                <span class="month">JUL</span>
+              </div>
+            </div>
+            <div class="webinar-info">
+              <h3>UI/UX Design Principles</h3>
+              <p class="webinar-time"><i class="far fa-clock"></i> 4:00 PM - 5:30 PM IST</p>
+              <p class="webinar-speaker"><i class="fas fa-user"></i> Amit Patel, UX Designer</p>
+              <p class="webinar-desc">Learn essential UI/UX design principles to create better user experiences.</p>
+              <button class="register-btn">Register Now</button>
+            </div>
+          </div>
+
+          <!-- Webinar 4 -->
+          <div class="webinar-card">
+            <div class="webinar-img">
+              <img src="Assets/livewebinar.avif" alt="Webinar" />
+              <div class="webinar-date recorded">
+                <i class="fas fa-play-circle"></i>
+                <span>RECORDED</span>
+              </div>
+            </div>
+            <div class="webinar-info">
+              <h3>Cloud Computing Essentials</h3>
+              <p class="webinar-time"><i class="far fa-clock"></i> 90 min</p>
+              <p class="webinar-speaker"><i class="fas fa-user"></i> Vikram Singh, Cloud Architect</p>
+              <p class="webinar-desc">Introduction to cloud computing concepts and major platforms.</p>
+              <button class="watch-btn">Watch Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 8: Notifications Page -->
+      <section class="page" id="notifications-page">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <h2 class="page-title">Notifications</h2>
+        </div>
+
+        <div class="notifications-container">
+          <div class="notifications-header">
+            <h3>Recent Notifications</h3>
+            <button class="mark-all-read">Mark all as read</button>
+          </div>
+
+          <div class="empty-notifications">
+            <img src="https://cdn-icons-png.flaticon.com/512/2645/2645890.png" alt="Empty Notifications" class="empty-icon" />
+            <h3>No Notifications Yet</h3>
+            <p>You're all caught up! We'll notify you when there's something new.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 9: App Settings Page -->
+      <section class="page" id="settings-page">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <h2 class="page-title">App Settings</h2>
+        </div>
+
+        <div class="settings-container">
+          <div class="settings-sidebar">
+            <ul>
+              <li class="active">Appearance</li>
+              <li>Account</li>
+              <li>Notifications</li>
+              <li>Privacy</li>
+              <li>Help & Support</li>
+            </ul>
+          </div>
+
+          <div class="settings-content">
+            <div class="settings-section">
+              <h3>Appearance</h3>
+              
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Theme</h4>
+                  <p>Choose between light and dark theme</p>
+                </div>
+                <div class="theme-selector">
+                  <button class="theme-btn light active">Light</button>
+                  <button class="theme-btn dark">Dark</button>
+                </div>
+              </div>
+
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Font Size</h4>
+                  <p>Adjust the text size</p>
+                </div>
+                <div class="font-size-selector">
+                  <button class="font-size-btn">S</button>
+                  <button class="font-size-btn active">M</button>
+                  <button class="font-size-btn">L</button>
+                </div>
+              </div>
+
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Compact View</h4>
+                  <p>Show more content with less spacing</p>
+                </div>
+                <label class="toggle">
+                  <input type="checkbox">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="settings-section">
+              <h3>Dashboard Settings</h3>
+              
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Default Dashboard View</h4>
+                  <p>Choose your preferred dashboard layout</p>
+                </div>
+                <select class="dashboard-select">
+                  <option>Programs View</option>
+                  <option selected>Progress View</option>
+                  <option>Calendar View</option>
+                </select>
+              </div>
+
+              <div class="setting-item">
+                <div class="setting-info">
+                  <h4>Show Progress Circle</h4>
+                  <p>Display your progress on the dashboard</p>
+                </div>
+                <label class="toggle">
+                  <input type="checkbox" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <button class="save-settings-btn">Save Changes</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 10: Contact Support Page -->
+      <section class="page" id="support-page">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <h2 class="page-title">Contact Support</h2>
+        </div>
+
+        <div class="support-container">
+          <div class="support-options">
+            <div class="support-option">
+              <div class="support-icon <div class="support-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="support-details">
+                <h3>Email Support</h3>
+                <p>Get help via email within 24 hours</p>
+                <p class="contact-info">support@eduplatform.com</p>
+                <button class="contact-btn">Send Email</button>
+              </div>
+            </div>
+
+            <div class="support-option">
+              <div class="support-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="support-details">
+                <h3>Phone Support</h3>
+                <p>Talk to our support team directly</p>
+                <p class="contact-info">+91 1800 123 4567</p>
+                <p class="support-hours">Mon-Fri, 9:00 AM - 6:00 PM IST</p>
+                <button class="contact-btn">Call Now</button>
+              </div>
+            </div>
+
+            <div class="support-option">
+              <div class="support-icon">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <div class="support-details">
+                <h3>Live Chat</h3>
+                <p>Chat with our support team in real-time</p>
+                <p class="support-hours">Available 24/7</p>
+                <button class="contact-btn">Start Chat</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your message"></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+
+          <div class="social-support">
+            <h3>Connect with us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 11: Updates Page -->
+      <section class="page" id="updates-page">
+        <div class="header-banner">
+          <img src="Assets/dashbanner.avif" alt="Banner" class="banner-img" />
+          <h2 class="page-title">Profile Updates</h2>
+        </div>
+
+        <div class="updates-container">
+          <div class="update-profile-form">
+            <h3>Update Your Profile</h3>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="update-name">Full Name</label>
+                  <input type="text" id="update-name" value="Mokshita Sharma">
+                </div>
+                <div class="form-group">
+                  <label for="update-email">Email</label>
+                  <input type="email" id="update-email" value="mokshita.sharma@example.com">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="update-phone">Phone</label>
+                  <input type="tel" id="update-phone" value="+91 98765 43210">
+                </div>
+                <div class="form-group">
+                  <label for="update-location">Location</label>
+                  <input type="text" id="update-location" value="Mumbai, India">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="update-bio">Bio</label>
+                <textarea id="update-bio" rows="3">Web development enthusiast with a passion for creating user-friendly interfaces.</textarea>
+              </div>
+              <div class="form-group">
+                <label for="update-skills">Skills (comma separated)</label>
+                <input type="text" id="update-skills" value="HTML, CSS, JavaScript, React, Node.js, UI/UX Design">
+              </div>
+              <div class="form-group">
+                <label>Profile Picture</label>
+                <div class="profile-upload">
+                  <img src="https://via.placeholder.com/100/FFC107/000000?text=M" alt="Profile" id="profile-preview">
+                  <div class="upload-controls">
+                    <button type="button" class="upload-btn">Upload New</button>
+                    <button type="button" class="remove-btn">Remove</button>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="update-profile-btn">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboards.js"></script>
+</body>
+</html>
